@@ -1,0 +1,7 @@
+<launch>
+    <node pkg="gps" name="gps_module" type="gps_module_node"  />
+    <node pkg="gps" name="gps_convert" type="gps_convert_node" args = "$(find gps)/data/School_map.png" output = "screen"/>
+    <node pkg="gps" name="gps_ui" type="gps_ui.py"  />
+
+
+</launch>
